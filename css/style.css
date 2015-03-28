@@ -100,8 +100,8 @@ h3 {
     color: #fff;
     border-radius: 0 0px 0px 0;
 
-	-webkit-box-shadow: 1px 2px 1px #111;
-          	box-shadow: 1px 2px 1px #444;
+	-webkit-box-shadow: 5px 5px 5px #888;
+          	box-shadow: 5px 5px 5px #888;
 }
 
 .heading:before {
@@ -118,7 +118,7 @@ h3 {
 
 h2 {
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.4em;
     display: inline-block;
     padding-top: 15px;
     padding-left: 5px;
@@ -133,12 +133,16 @@ h2 {
     display: inline-block;
 }
 
-p {line-height: 1.8em;}
+p {
+    line-height: 1.8em;
+    margin: 0;
+}
+
 ul li {line-height: 1.5em;}
 
 a {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
     margin: 0px;
     display: inline;
@@ -172,6 +176,7 @@ footer {
     header {
         padding-left: 2%;
         padding-right: 2%;
+        height: 250px;
     }
     
     .biopic {width: 164px;}
