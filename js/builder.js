@@ -129,7 +129,7 @@ var works = [
         city: "Toulouse",
         desc: [
             {
-                name: "CESR est un laboratoire du Centre national de la recherche scientifique",
+                name: "CESR est un laboratoire du CNRS",
                 points: []
             }, 
             {
