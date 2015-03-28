@@ -164,14 +164,16 @@ var works = [
     }
 ];
 var HTMLworkStart = '<div class="work-start"></div>';
+var HTMLworkStartAlt = '<div class="work-start gray-bkg"></div>';
 var HTMLworkName = '<a class="darkviolet-text" href="%href%" target="_blank">%data%</a>';
 var HTMLworkDate = '<div><div class="gray-text left">%data%</div>';
 var HTMLworkCity = '<div class="gray-text right">%data%</div></div>';
 var HTMLworkDesc = '<p class="clear darkviolet-text">%data%</p>';
 var HTMLworkPointStart = '<ul class="point-start fa-ul"></ul></div>';
 var HTMLworkPoint = '<li><i class="fa-li fa fa-arrow-circle-o-right"/>%data%</li>';
+var count = 0;
 works.forEach(function (item) {
-    $('#works').append(HTMLworkStart);
+    $('#works').append(count%2 == 0 ? HTMLworkStart : HTMLworkStartAlt);
     var lastWork = $('.work-start:last');
     lastWork
         .append(HTMLworkName.replace('%data%', item.name).replace('%href%', item.url))
@@ -185,6 +187,7 @@ works.forEach(function (item) {
         });
     });
     lastWork.append('<br/>');
+    count++;
 });
 
 
