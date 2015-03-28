@@ -184,7 +184,7 @@ works.forEach(function (item) {
             $('.point-start:last').append(HTMLworkPoint.replace('%data%', p));
         });
     });
-    lastWork.append('<br/><br/>');
+    lastWork.append('<br/>');
 });
 
 
