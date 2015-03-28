@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: 300 18px Lato, Roboto, sans-serif;
+}
+
+body {
+    border-top: 0px solid #fc0;
+    background-color: #bbb;
+    color: #000;
+}
+
+/* header */
+header {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    background: linear-gradient(0deg, #333 10%, #6d3353 100%);
+    height: 350px;
+    display: block;
+}
+
+h1 {
+    font-family: Cursive, 'Comic Sans';
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 48px;
+    display: block;
+    padding-top: 20px;
+}
+
+.white-text {color: #eee;}
+.violet-text {color: violet;}
+.orange-text {color: #fc0;}
+.darkviolet-text {color: darkviolet;}
+.gray-text {color: #808080;}
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
+.line {border-top: 1px solid rgb(255, 182, 0);}
+
+.row {
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+}
+.col {
+    display: table-cell;
+    width: 33%;
+    vertical-align: top;
+}
+
+.width18 {width: 18px;}
+.text-align {text-align: left;}
+
+li {list-style: none;}
+.li-size {line-height: 1em;}
+.text-size {font-size: large;}
+
+.biopic {
+    width: 256px;
+    float: right;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.17em;
+    color: #fc0;
+}
+
+/* main */
+#main {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #fff;
+    color: #333;
+    clear: both;
+
+	-webkit-box-shadow: 5px 5px 5px #888;
+          	box-shadow: 5px 5px 5px #888;
+}
+
+.block {padding: 30px 30px 0px 30px;}
+.empty {padding-bottom: 30px;}
+.work-start .fa-ul {margin-left: 2.5em;}
+
+#schools, #works, #coms, #divers {
+    margin-right: 41px;
+}
+
+.heading {
+    position: relative;
+    margin: 0 0 10px -39px;
+    width: 100%;
+    height: 58px;
+    display: block;
+    background: linear-gradient(0deg, #8a5691 10%, #6d3353 90%);
+    color: #fff;
+    border-radius: 0 0px 0px 0;
+
+	-webkit-box-shadow: 1px 2px 1px #111;
+          	box-shadow: 1px 2px 1px #444;
+}
+
+.heading:before {
+    content: " ";
+    top: -10px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-color: transparent #222 #222 transparent;
+    border-style: solid;
+    border-width: 5px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.8em;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.color {
+    height: 38px;
+    color: #fc0;
+    background-color: #333;
+    padding: 10px;
+    float: left;
+    display: inline-block;
+}
+
+p {line-height: 1.8em;}
+ul li {line-height: 1.5em;}
+
+a {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
+    margin: 0px;
+    display: inline;
+    outline: 0;
+}
+
+a:hover  {
+    text-decoration: underline;
+    color: tomato;
+}
+
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+
+/* footer */
+footer {
+    text-align: center;
+    background: linear-gradient(45deg, #333 10%, #444 90%);
+    color: #ccc;
+    font-size: 14px;
+	padding: 20px;
+
+	-webkit-box-shadow: 0px 0px 12px #888;
+          	box-shadow: 0px 0px 12px #888;
+}
+
+/* media */
+/* smartphone */
+@media only screen and (max-width: 768px) {
+    header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .biopic {width: 164px;}
+    .text-size {font-size: medium;}
+    .show {display: none;}
+    .text-align {text-align: right;}
+    
+    #main {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+	}
+}
