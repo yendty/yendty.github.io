@@ -192,7 +192,7 @@ footer {
         margin-bottom: 0px;
 	}
     
-    .block {padding: 30px 5px 0px 8px;}
+    .block {padding: 30px 8px 0px 5px;}
     .heading {
         margin: 0 0 10px -15px; // ".block.padding-left (5px) + .heading:before (10px)";
     }
