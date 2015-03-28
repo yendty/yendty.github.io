@@ -186,7 +186,7 @@ footer {
     .text-align {text-align: right;}
     
     #main {
-        margin-left: 2%;
+        margin-left: 1.5%;
         margin-right: 0%;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -195,5 +195,7 @@ footer {
     .block {padding: 30px 8px 0px 5px;}
     .heading {
         margin: 0 0 10px -15px; // ".block.padding-left (5px) + .heading:before (10px)";
+    }
+    .heading:before {
     }
 }

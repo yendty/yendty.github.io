@@ -80,8 +80,8 @@ var schools = [
 ];
 var HTMLschoolStart = '<div class="school-start"></div>';
 var HTMLschoolName = '<a class="darkviolet-text" href="%href%" target="_blank">%data%</a>';
-var HTMLschoolDate = '<div><div class="gray-text left">%data%</div>';
-var HTMLschoolCity = '<div class="gray-text right">%data%</div></div>';
+var HTMLschoolDate = '<div><div class="gray-text left italic">%data%</div>';
+var HTMLschoolCity = '<div class="gray-text right italic">%data%</div></div>';
 var HTMLschoolDesc = '<p class="clear">%data%</p><br>';
 schools.forEach(function (item) {
     $('#schools').append(HTMLschoolStart);
@@ -166,8 +166,8 @@ var works = [
 var HTMLworkStart = '<div class="work-start"></div>';
 var HTMLworkStartAlt = '<div class="work-start gray-bkg"></div>';
 var HTMLworkName = '<a class="darkviolet-text" href="%href%" target="_blank">%data%</a>';
-var HTMLworkDate = '<div><div class="gray-text left">%data%</div>';
-var HTMLworkCity = '<div class="gray-text right">%data%</div></div>';
+var HTMLworkDate = '<div><div class="gray-text left italic">%data%</div>';
+var HTMLworkCity = '<div class="gray-text right italic">%data%</div></div>';
 var HTMLworkDesc = '<p class="clear darkviolet-text">%data%</p>';
 var HTMLworkPointStart = '<ul class="point-start fa-ul"></ul></div>';
 var HTMLworkPoint = '<li><i class="fa-li fa fa-arrow-circle-o-right"/>%data%</li>';
