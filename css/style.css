@@ -82,8 +82,9 @@ h3 {
           	box-shadow: 5px 5px 5px #888;
 }
 
-.block {padding: 30px 25px 0px 25px;}
-.empty {padding-bottom: 30px;}
+.block {padding: 0px 25px 0px 25px;}
+.empty-top {padding-top: 30px;}
+.empty-bottom {padding-bottom: 30px;}
 .work-start .fa-ul {margin-left: 2.5em;}
 
 #schools, #works, #coms, #divers {
@@ -134,7 +135,6 @@ h2 {
 
 p {
     line-height: 1.8em;
-    margin: 0;
 }
 
 ul li {line-height: 1.5em;}

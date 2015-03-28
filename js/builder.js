@@ -57,7 +57,7 @@ row.append(HTMLbioPic.replace("%data%", bio["pic"]));
 // Formations
 var schools = [
     {
-        name: "Valtech training -- Certification: l'essentiel de C++ et la conception objet",
+        name: "Valtech training -- L'essentiel de C++ et la conception objet",
         url: "http://www.valtech-training.fr/formation/developpement-java-cpp/cpp/",
         date: "2012 (5 jours)",
         city: "Toulouse",
