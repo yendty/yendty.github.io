@@ -79,16 +79,19 @@ var schools = [
     }
 ];
 var HTMLschoolStart = '<div class="school-start"></div>';
+var HTMLschoolStartAlt = '<div class="school-start gray-bkg"></div>';
 var HTMLschoolName = '<a class="darkviolet-text" href="%href%" target="_blank">%data%</a>';
 var HTMLschoolDate = '<div><div class="gray-text left italic">%data%</div>';
 var HTMLschoolCity = '<div class="gray-text right italic">%data%</div></div>';
-var HTMLschoolDesc = '<p class="clear">%data%</p><br>';
+var HTMLschoolDesc = '<p class="clear">%data%</p><br/>';
+var count = 0;
 schools.forEach(function (item) {
-    $('#schools').append(HTMLschoolStart);
+    $('#schools').append(count%2 == 0 ? HTMLschoolStart : HTMLschoolStartAlt);
     $('.school-start:last')
         .append(HTMLschoolName.replace('%data%', item.name).replace('%href%', item.url))
         .append(HTMLschoolDate.replace('%data%', item.date) + HTMLschoolCity.replace('%data%', item.city))
         .append(HTMLschoolDesc.replace('%data%', item.desc));
+    count++;
 });
 
 
@@ -169,7 +172,7 @@ var HTMLworkName = '<a class="darkviolet-text" href="%href%" target="_blank">%da
 var HTMLworkDate = '<div><div class="gray-text left italic">%data%</div>';
 var HTMLworkCity = '<div class="gray-text right italic">%data%</div></div>';
 var HTMLworkDesc = '<p class="clear darkviolet-text">%data%</p>';
-var HTMLworkPointStart = '<ul class="point-start fa-ul"></ul></div>';
+var HTMLworkPointStart = '<ul class="point-start fa-ul"></ul>';
 var HTMLworkPoint = '<li><i class="fa-li fa fa-arrow-circle-o-right"/>%data%</li>';
 var count = 0;
 works.forEach(function (item) {
@@ -218,26 +221,26 @@ var coms = [
         val: "TRAC, PortMon, Wireshark, TortoiseSVN, PowerDesigner"
     },
 ];
-var HTMLcomStart = '<ul class="com-start fa-ul"></ul></div>';
+var HTMLcomStart = '<div class="coms-start"><ul class="com-start fa-ul"></ul></div>';
 var HTMLcomKey = '<li><i class="fa-li fa fa-star-half-o darkviolet-text"/><span class="darkviolet-text">%key% : </span>';
 var HTMLcomVal = '%value%</li>';
+$('#coms').append(HTMLcomStart);
 coms.forEach(function (item) {
-    $('#coms').append(HTMLcomStart);
     $('.com-start:last').append(HTMLcomKey.replace('%key%', item.key) + HTMLcomVal.replace('%value%', item.val));
 });
 
 
-// Divers
-var divers = ["<i class='fa fa-bicycle darkviolet-text'/> vélo", 
+// Loisirs
+var loisirs = ["<i class='fa fa-bicycle darkviolet-text'/> vélo", 
               "badminton",               
               "<i class='fa fa-music darkviolet-text'/> musique", 
               "<i class='fa fa-film darkviolet-text'/> cinéma", 
               "<i class='fa fa-book darkviolet-text'/> lecture",
               "<i class='fa fa-plane darkviolet-text'/> voyages", 
              ];
-var HTMLdiversStart = '<ul class="divers-start fa-ul"></ul></div>';
-var HTMLdivers = '<li><i class="fa-li fa fa-dot-circle-o"/>%data%</li>';
-$('#divers').append(HTMLdiversStart);
-divers.forEach(function (item) {
-    $('.divers-start:last').append(HTMLdivers.replace('%data%', item));
+var HTMLloisirStart = '<div class="loisirs-start"><ul class="loisir-start fa-ul"></ul></div>';
+var HTMLloisir = '<li><i class="fa-li fa fa-dot-circle-o"/>%data%</li>';
+$('#loisirs').append(HTMLloisirStart);
+loisirs.forEach(function (item) {
+    $('.loisir-start:last').append(HTMLloisir.replace('%data%', item));
 });

@@ -82,18 +82,18 @@ h3 {
           	box-shadow: 5px 5px 5px #888;
 }
 
-.block {padding: 0px 25px 0px 25px;}
+.block {padding: 0px 0px 0px 0px;}
 .empty-top {padding-top: 30px;}
 .empty-bottom {padding-bottom: 30px;}
 .work-start .fa-ul {margin-left: 2.5em;}
 
-#schools, #works, #coms, #divers {
-    margin-right: 0px;
+.work-start, .school-start, .coms-start, .loisirs-start {
+    padding: 0px 25px 0px 25px;
 }
 
 .heading {
     position: relative;
-    margin: 0 0 10px -35px; // ".block.padding-left (25px) + .heading:before (10px)";
+    margin: 0 25px 10px -10px; // ".block.padding-left (0px) + .heading:before (10px)";
     height: 58px;
     display: block;
     background: linear-gradient(0deg, #8a5691 10%, #6d3353 90%);
@@ -192,9 +192,11 @@ footer {
         margin-bottom: 0px;
 	}
     
-    .block {padding: 30px 8px 0px 5px;}
+    .work-start, .school-start, .coms-start, .loisirs-start {
+        padding: 0px 8px 0px 5px;
+    }
     .heading {
-        margin: 0 0 10px -15px; // ".block.padding-left (5px) + .heading:before (10px)";
+        margin: 0 8px 10px -10px; // ".block.padding-left (0px) + .heading:before (10px)";
     }
     .heading:before {
     }
