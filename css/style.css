@@ -88,7 +88,7 @@ h3 {
 .work-start .fa-ul {margin-left: 2.5em;}
 
 .work-start, .school-start, .coms-start, .loisirs-start {
-    padding: 0px 25px 0px 25px;
+    padding: 5px 25px 0px 25px;
 }
 
 .heading {
@@ -193,7 +193,7 @@ footer {
 	}
     
     .work-start, .school-start, .coms-start, .loisirs-start {
-        padding: 0px 8px 0px 5px;
+        padding: 5px 8px 0px 5px;
     }
     .heading {
         margin: 0 8px 10px -10px; // ".block.padding-left (0px) + .heading:before (10px)";
