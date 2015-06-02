@@ -155,7 +155,7 @@ var works = [
             {
                 name: "Réalisations",
                 points: ["Evaluation des outils de modélisation UML pour la génération de code et la documentation",
-                         "Etude de la documentation spécifique d'un boîtier électronique pour réaliser un logiciel simulant ce boîtier",
+                         "Etude de la documentation spécifique d'un boîtier électronique pour réaliser un simulateur",
                          "Analyse et étude du logiciel de contrôle « PILOT », une expérience embarquée dans un ballon stratosphérique"
                         ]
             },
@@ -231,11 +231,12 @@ coms.forEach(function (item) {
 
 
 // Loisirs
-var loisirs = ["<i class='fa fa-bicycle darkviolet-text'/> vélo", 
-              "badminton",               
-              "<i class='fa fa-music darkviolet-text'/> musique", 
+var loisirs = ["badminton",
+               "<i class='fa fa-bicycle darkviolet-text'/> vélo",               
               "<i class='fa fa-film darkviolet-text'/> cinéma", 
+              "<i class='fa fa-android darkviolet-text'/> jeux android", 
               "<i class='fa fa-book darkviolet-text'/> lecture",
+              "<i class='fa fa-music darkviolet-text'/> musique", 
               "<i class='fa fa-plane darkviolet-text'/> voyages", 
              ];
 var HTMLloisirStart = '<div class="loisirs-start"><ul class="loisir-start fa-ul"></ul></div>';
