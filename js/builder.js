@@ -14,7 +14,7 @@ var HTMLskills = '<li class="li-size"><span class="white-text text-size">%data%<
 var HTMLbioPic = '<div class="col show"><img src="%data%" class="biopic"></div>';
 
 var bio = {
-	name: "Thu Yen DO",
+	name: "Yen DO",
 	role: "Ingénieur d'études et développement",
 	contacts: {
 		mobile: "06 14 58 88 19",
@@ -22,7 +22,7 @@ var bio = {
         github: "yendty.github.io",
 		location: "Toulouse"
 	},
-	skills: ["Delphi", "C++", "C#", "Java"],
+	skills: ["Delphi", "C#", "WPF/Entity Framework 6", "HTML5/CSS3/Bootstrap/JQuery", "ASP.NET MVC/Web API", "C++", "Java"],
 	pic: "images/270.jpg"
 };
 
@@ -56,6 +56,13 @@ row.append(HTMLbioPic.replace("%data%", bio["pic"]));
 
 // Formations
 var schools = [
+    {
+        name: "Vaelia Toulouse -- Microsoft Certified Solution Developper",
+        url: "http://groupe.nvl.fr/site-vaelia/formations/",
+        date: "2015 (3 mois)",
+        city: "Toulouse",
+        desc: "Formation"
+    },    
     {
         name: "Valtech training -- L'essentiel de C++ et la conception objet",
         url: "http://www.valtech-training.fr/formation/developpement-java-cpp/cpp/",
@@ -98,7 +105,7 @@ schools.forEach(function (item) {
 // Expériences
 var works = [
     {
-        name: "SAS DETRACOM - Responsable de développement Delphi",
+        name: "SAS DETRACOM - Ingénieur d'étude et développement Delphi",
         url: "http://www.detracom.fr/fr/",
         date: "06/2007 - 12/2013 (6 ans)", 
         city: "Toulouse",
@@ -202,7 +209,7 @@ var coms = [
     },
     {
         key: "Langages de programmation",
-        val: "<span class='bold'>Delphi</span>, <span class='bold'>C++</span>, C#, Java, SQL, PHP"
+        val: "<span>Delphi</span>, <span class='bold'> C#</span>, <span class='bold'> WPF/Entity Framework 6</span>, <span class='bold'> HTML5/CSS3/Bootstrap/JQuery</span>,<span class='bold'> ASP.NET MVC/Web API</span>, C++, Java, SQL, PHP"
     },
     {
         key: "Réseaux",
@@ -210,11 +217,11 @@ var coms = [
     },
     {
         key: "IDE",
-        val: "<span class='bold'>Delphi XE</span>, Eclipse, Visual Studio (2010)"
+        val: "<span class='bold'>Delphi XE</span>, Visual Studio Community(2015), Eclipse"
     },
     {
         key: "Bases de données",
-        val: "<span class='bold'>MS Access, Firebird</span>, SQL Server"
+        val: "<span class='bold'>MS Access, SQL Server</span>, Firebird"
     }, 
     {
         key: "Outils",
